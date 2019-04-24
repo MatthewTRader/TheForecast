@@ -1,3 +1,7 @@
 # Don't track content of these folder
 
-.sass-caches
+.sass-caches/
+
+*.scssc
+
+
