@@ -1,0 +1,140 @@
+/*---------------------------------------------------------*\
+                      Core Styles
+\*---------------------------------------------------------*/
+
+
+html, body, p, li, a, h1, h2, h3, h4, h5, h6, img {
+    -webkit-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -ms-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+    transition:all 0.5s ease;
+}
+
+header, h1, h2, h3, h4, h5, h6 {
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	font-family: $font;
+	font-size: 80%;
+    
+    @media (min-width: 769px) {
+        font-size: 100%;
+    }
+}
+
+body {
+    scroll-behavior: smooth;
+    color: $font_color;
+}
+
+h1 {
+	font-family: $font;
+    font-size: 3rem;
+    color: $font_color;
+}
+h2, h3, h4, h5, h6 {
+	font-family: $font;
+    color: #333;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #777;
+}
+
+a {
+	color: $font_color;
+	text-decoration: none;
+	&:hover {
+		color: $font_color;
+		outline: 0;
+	}
+	&:focus {
+		outline: 0;
+	}
+	&:active {
+		outline: 0;
+	}
+}
+
+img {
+	max-width: 100%;
+	vertical-align: bottom;
+}
+
+.clear {
+	&:before {
+		content: ' ';
+		display: table;
+	}
+	&:after {
+		content: ' ';
+		display: table;
+		clear: both;
+	}
+}
+::selection {
+	background: $font_color;
+	color: $bg_header_color;
+	text-shadow: none;
+}
+::-webkit-selection {
+	background: $font_color;
+	color: $bg_header_color;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: $font_color;
+	color: $bg_header_color;
+	text-shadow: none;
+}
+
+input:focus {
+	outline: 0;
+	border: 1px solid $font_color;
+}
+div.aligncenter {
+	display: block;
+	margin: 5px auto 5px auto;
+}
+
+.hatom-extra {
+    display:none;
+    visibility:hidden;
+}
+
+textarea, input, select {
+    background-color: #fff;
+    font-family: $font;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    color: #777;
+    display: block;
+    font-size: 1.3rem;
+    margin: 0 0 1rem 0;
+    padding: 0.5rem;
+    height: 2.3125rem;
+    border: none;
+    width: 100%;
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: box-shadow 0.45s,border-color 0.45s ease-in-out;
+    
+    @media (min-width: 769px) {
+        font-size: 1.1rem;
+    }
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
