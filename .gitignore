@@ -1,7 +1,10 @@
-# Don't track content of these folder
+# Don't track content of these folders
 
 .sass-caches/
+node_modules/
+
+
+
+# Don't track these file types
 
 *.scssc
-
-
