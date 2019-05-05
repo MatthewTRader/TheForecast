@@ -71,6 +71,9 @@ class App extends Component {
 
   render() {
     let dayForecast;
+      
+    let bgImage = 'https://source.unsplash.com/collection/1550580';
+      
     if (this.state.dates) {
       dayForecast = this.state.dates.map((day, index) => (
         <DaySection key={index} dayNumber={index+1} day={day} min={Math.round(this.state.datesMinMax[index][0])} max={Math.round(this.state.datesMinMax[index][1])} />
@@ -78,16 +81,22 @@ class App extends Component {
     } else dayForecast = <p>Could not get weather data...</p>;
     
     return (
-      <div className="App">
+      <div className="App" style={{ backgroundImage: 'url(' + bgImage + ')' }}>
+        <div className="contentArea">
         <h1>The Forecast</h1>
+        <p>Type in a city name to see the 5 day temprature forecast</p>
+        <div className="search">
         <input placeholder="Enter city" onChange={this.onChange} name="city" value={this.state.city}/>
         <button onClick={() => {
             this.setState({showCarousel:true})
             this.getWeatherData(this.state.city)
+            this.bgImage = 'https://source.unsplash.com/featured/Dallas,skyline';
         }}>
-          Get 5 Day Forecast
+          GO
         </button>
-       { this.state.showCarousel ? <Carousel days={dayForecast} /> : null }
+        </div>
+       {this.state.showCarousel ? <Carousel days={dayForecast} /> : null }
+       </div>
       </div>
     );
   }

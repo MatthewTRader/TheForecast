@@ -28,15 +28,20 @@ html {
 body {
     scroll-behavior: smooth;
     color: $font_color;
+    margin: 0;
 }
 
 h1 {
-	font-family: $font;
-    font-size: 3rem;
+	font-family: $font-header;
+    font-size: 60px;
     color: $font_color;
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: 1;
+    text-shadow: 3px 3px 4px rgba(0,0,0,0.5);
 }
 h2, h3, h4, h5, h6 {
-	font-family: $font;
+	font-family: $font-header;
     color: #333;
     font-weight: 700;
 }

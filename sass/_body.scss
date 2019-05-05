@@ -1,0 +1,48 @@
+.App {
+    margin: 0;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.contentArea {
+    width: 100%;
+    max-width: 500px;
+    margin: 25vh auto 0;
+}
+
+.search {
+    display: flex;
+}
+
+input {
+    border-radius: 3px;
+    width: 100%;
+    max-width: 450px;
+    display: inline-block;
+    margin: 0 8px 0 0;
+    height: 40px;
+}
+
+button {
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    background: #3C5A80;
+    color: white;
+    height: 40px;
+    width: 60px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all ease 0.3s;
+    
+    &:hover {
+        background: #78B5FF;
+        cursor: pointer;
+    }
+}
