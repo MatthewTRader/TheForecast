@@ -9,6 +9,7 @@ const flickityOptions = {
 }
  
 function Carousel(props) {
+    
   return (
     <Flickity
       className={'carousel'} // default ''

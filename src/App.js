@@ -66,12 +66,11 @@ class App extends Component {
 
     this.setState({ dates: days, datesMinMax: dayMinMax });
   }
-
+  
   onChange = e => this.setState({ [e.target.name]: e.target.value })
 
   render() {
     let dayForecast;
-      
     let bgImage = 'https://source.unsplash.com/collection/4762064';
       
     if (this.state.dates) {
@@ -83,7 +82,7 @@ class App extends Component {
     return (
       <div className="App" style={{ backgroundImage: 'url(' + bgImage + ')' }}>
             <div className="contentArea">
-            <h1>The Forecast for {this.state.city}</h1>
+            <h1>The Forecast {this.state.forCity}</h1>
             <h3>Type in a city name to see the 5 day temprature forecast</h3>
             <div className="search">
         
@@ -93,6 +92,7 @@ class App extends Component {
                 this.setState({showCarousel:true})
                 this.getWeatherData(this.state.city)
                 document.body.classList.add('search-results');
+                this.setState({forCity: "for " + this.state.city });
             }}>
             GO
             </button>

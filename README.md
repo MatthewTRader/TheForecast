@@ -1,5 +1,17 @@
 # TheForecast
+I started off with downloading the Create React App from facebook to build the skeleton of my app.
 
+I used SASS to write and compile my minified CSS, it's my preferred CSS preprocessor.
+
+I installed axios to manage the importing of the weather API
+
+The weather was being imported in 3 hour chunks of time which was very challenging to get day long summeries of the weather, so for this project I just pulled in the temperatures for each day, put them in an array and pulled the highest and the lowest temps of that day and displayed them.
+
+Cities are limited to the US only.
+
+I installed flickity slider to manage the layout of the days so a user can scroll through them on smaller screens.
+
+I used Unsplash.com's api to pull random images from a colletion I made of weather photos I liked for the background image.
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

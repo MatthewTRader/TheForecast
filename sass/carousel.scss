@@ -62,7 +62,6 @@ h2 {
 
 
 .flickity-prev-next-button.next {
-    right: -20px !important;
 
     @media (min-width: 1050px) {
         display: none;
@@ -70,7 +69,6 @@ h2 {
 }
 
 .flickity-prev-next-button.previous {
-    left: -20px !important;
 
     @media (min-width: 1050px) {
         display: none;
