@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/TheForecast/static/css/main.a9f18d87.chunk.css",
+    "main.css": "/TheForecast/static/css/main.3830e9ae.chunk.css",
     "main.js": "/TheForecast/static/js/main.209fa029.chunk.js",
     "main.js.map": "/TheForecast/static/js/main.209fa029.chunk.js.map",
     "runtime~main.js": "/TheForecast/static/js/runtime~main.10d93540.js",
@@ -9,10 +9,10 @@
     "static/js/2.c12266ac.chunk.js": "/TheForecast/static/js/2.c12266ac.chunk.js",
     "static/js/2.c12266ac.chunk.js.map": "/TheForecast/static/js/2.c12266ac.chunk.js.map",
     "index.html": "/TheForecast/index.html",
-    "precache-manifest.0bb0959e1616f92f4b51031c2ea1913d.js": "/TheForecast/precache-manifest.0bb0959e1616f92f4b51031c2ea1913d.js",
+    "precache-manifest.35d5eb325ccf9cc874268fcec4c650f3.js": "/TheForecast/precache-manifest.35d5eb325ccf9cc874268fcec4c650f3.js",
     "service-worker.js": "/TheForecast/service-worker.js",
     "static/css/2.6c231693.chunk.css.map": "/TheForecast/static/css/2.6c231693.chunk.css.map",
-    "static/css/main.a9f18d87.chunk.css.map": "/TheForecast/static/css/main.a9f18d87.chunk.css.map",
+    "static/css/main.3830e9ae.chunk.css.map": "/TheForecast/static/css/main.3830e9ae.chunk.css.map",
     "static/media/App.css": "/TheForecast/static/media/sun.69b434d7.svg"
   }
 }
