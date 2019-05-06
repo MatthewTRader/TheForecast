@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9c752ec3c4a9e75361d0c0de935d6ab9",
+    "revision": "641fa70d3745fe73d5aa4a08d1b7ac15",
     "url": "/TheForecast/index.html"
   },
   {
@@ -8,19 +8,23 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/TheForecast/static/css/2.6c231693.chunk.css"
   },
   {
-    "revision": "c985120849c808b49cfb",
-    "url": "/TheForecast/static/css/main.88715bc1.chunk.css"
+    "revision": "363928cf93e72a79a401",
+    "url": "/TheForecast/static/css/main.ef899b16.chunk.css"
   },
   {
     "revision": "d39d040553162b7c12ea",
     "url": "/TheForecast/static/js/2.c12266ac.chunk.js"
   },
   {
-    "revision": "c985120849c808b49cfb",
-    "url": "/TheForecast/static/js/main.a36db006.chunk.js"
+    "revision": "363928cf93e72a79a401",
+    "url": "/TheForecast/static/js/main.2cfc0b84.chunk.js"
   },
   {
     "revision": "512d542524ec2542d3e7",
     "url": "/TheForecast/static/js/runtime~main.10d93540.js"
+  },
+  {
+    "revision": "69b434d7f20265a89e50cc58a2ef48a3",
+    "url": "/TheForecast/static/media/sun.69b434d7.svg"
   }
 ]);

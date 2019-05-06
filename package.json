@@ -2,7 +2,7 @@
   "name": "TheForecast",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://MatthewTRader.github.io/TheForecast",
+  "homepage": "https://matthewtrader.github.io/TheForecast",
   "dependencies": {
     "axios": "^0.18.0",
     "gh-pages": "^2.0.1",

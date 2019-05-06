@@ -87,7 +87,7 @@ class App extends Component {
             <h3>Type in a city name to see the 5 day temprature forecast</h3>
             <div className="search">
         
-            <input placeholder="Enter city" onChange={this.onChange} name="city" value={this.state.city}/>
+            <input placeholder="Enter city" autoFocus onChange={this.onChange} name="city" value={this.state.city}/>
 
             <button onClick={() => {
                 this.setState({showCarousel:true})

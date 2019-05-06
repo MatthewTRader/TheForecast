@@ -4,11 +4,23 @@
     height: 200px;
     width: 170px;
     margin: 0 10px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.85);
     transition: all ease 0.3s;
     padding: 10px;
 
-    &.is-selected {}
+    transition: all ease 0.3s;
+
+    @media (min-width:1024px) {
+        &:hover {
+            border: 5px solid #3C5DAA;
+            background: rgba(255, 255, 255, 0.95);
+
+            h2 {
+                background: #3C5DAA;
+            }
+        }
+
+    }
 
     .temp {
         margin-top: 30px;
@@ -38,7 +50,16 @@ h2 {
     background: #3C5A80;
     padding: 0 5px 5px;
     color: #fff;
+    transition: all ease 0.3s;
 }
+
+.weather-icon {
+    height: 60px;
+    width: 60px;
+    margin: 10px auto;
+    background: url('img/sun.svg') center center / cover no-repeat;
+}
+
 
 .flickity-prev-next-button.next {
     right: -20px !important;
@@ -60,5 +81,3 @@ h2 {
     display: flex;
     align-items: center;
 }
-
-.flickity-viewport {}

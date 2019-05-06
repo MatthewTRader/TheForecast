@@ -7,7 +7,8 @@ function DaySection(props) {
             <h2 className="date">{day}</h2>
             <p className="temp">Tempratures:</p>
             <p className="min">Low: {min}°</p>  
-            <p className="max">High: {max}°</p>  
+            <p className="max">High: {max}°</p>
+            <div className="weather-icon"></div>
         </div>
     );
 }
