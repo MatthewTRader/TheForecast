@@ -29,7 +29,7 @@ class App extends Component {
   getWeatherData = async city => {
     //console.log(`getting weather data for ${city}`);
 
-    await axios.get(`http://api.openweathermap.org/data/2.5/forecast?q=${city},US&units=imperial&appid=581268fb978a3330cfbfb8c780e67361`)
+    await axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${city},US&units=imperial&appid=581268fb978a3330cfbfb8c780e67361`)
       .then(res => { 
         this.setState({ 
           city: res.data.city.name,
