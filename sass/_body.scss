@@ -12,12 +12,16 @@
 
 .contentArea {
     width: 100%;
-    max-width: 500px;
+    text-align: center;
     margin: 25vh auto 0;
+    transition: all ease 0.5s;
 }
 
 .search {
     display: flex;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
 }
 
 input {
@@ -42,7 +46,13 @@ button {
     transition: all ease 0.3s;
     
     &:hover {
-        background: #78B5FF;
+        background: #3C5DAA;
         cursor: pointer;
+    }
+}
+
+.search-results {
+    .contentArea {
+        margin: 10vh auto 0;
     }
 }

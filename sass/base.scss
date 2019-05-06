@@ -23,7 +23,7 @@
 $font: 'Oxygen', sans-serif;
 $font-header: 'Corben', cursive;;
 
-$font_color: #fff;
+$font_color: #777;
 $font-white-color: #ffffff;
 $font_menu_color: #fff;
 $font_body_color: #979797;
@@ -39,6 +39,5 @@ $bg_body_color: #efefef;
 
 
 @import 'core.scss';
-@import 'header.scss';
 @import 'body.scss';
-@import 'footer.scss';
+@import 'carousel.scss';

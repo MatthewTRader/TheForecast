@@ -46,7 +46,7 @@ class App extends Component {
     // Loop through each Day
     this.state.dayChunks.forEach(chunk => {
       // get the current day in the form of MM/DD
-      let currentDay = `${chunk[0].dt_txt.substr(5,2)}/${chunk[0].dt_txt.substr(8,2)}`;
+      let currentDay = `May ${chunk[0].dt_txt.substr(8,2)}`;
       // add the current day to the days array
       days.push(currentDay);
 
@@ -72,7 +72,7 @@ class App extends Component {
   render() {
     let dayForecast;
       
-    let bgImage = 'https://source.unsplash.com/collection/1550580';
+    let bgImage = 'https://source.unsplash.com/collection/4762064';
       
     if (this.state.dates) {
       dayForecast = this.state.dates.map((day, index) => (
@@ -82,21 +82,25 @@ class App extends Component {
     
     return (
       <div className="App" style={{ backgroundImage: 'url(' + bgImage + ')' }}>
-        <div className="contentArea">
-        <h1>The Forecast</h1>
-        <p>Type in a city name to see the 5 day temprature forecast</p>
-        <div className="search">
-        <input placeholder="Enter city" onChange={this.onChange} name="city" value={this.state.city}/>
-        <button onClick={() => {
-            this.setState({showCarousel:true})
-            this.getWeatherData(this.state.city)
-            this.bgImage = 'https://source.unsplash.com/featured/Dallas,skyline';
-        }}>
-          GO
-        </button>
-        </div>
-       {this.state.showCarousel ? <Carousel days={dayForecast} /> : null }
-       </div>
+            <div className="contentArea">
+            <h1>The Forecast for {this.state.city}</h1>
+            <h3>Type in a city name to see the 5 day temprature forecast</h3>
+            <div className="search">
+        
+            <input placeholder="Enter city" onChange={this.onChange} name="city" value={this.state.city}/>
+
+            <button onClick={() => {
+                this.setState({showCarousel:true})
+                this.getWeatherData(this.state.city)
+                document.body.classList.add('search-results');
+            }}>
+            GO
+            </button>
+            </div>
+            </div>
+            <div className='carousel-container'>
+                {this.state.showCarousel ? <Carousel days={dayForecast} /> : null }
+           </div>
       </div>
     );
   }

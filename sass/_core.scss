@@ -27,23 +27,22 @@ html {
 
 body {
     scroll-behavior: smooth;
-    color: $font_color;
     margin: 0;
 }
 
 h1 {
 	font-family: $font-header;
     font-size: 60px;
-    color: $font_color;
+    color: $font-white-color;
     margin-top: 0;
     margin-bottom: 15px;
-    line-height: 1;
+    line-height: 1.1;
     text-shadow: 3px 3px 4px rgba(0,0,0,0.5);
 }
 h2, h3, h4, h5, h6 {
-	font-family: $font-header;
+	font-family: $font;
     color: #333;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 h2 {
@@ -52,7 +51,11 @@ h2 {
 }
 
 h3 {
-    color: #777;
+    color: $font-white-color;
+}
+
+p {
+    color: $font_color;
 }
 
 a {
@@ -142,4 +145,8 @@ textarea, input, select {
 .container {
     max-width: 1400px;
     margin: auto;
+}
+
+button::-moz-focus-inner {
+  border: 0;
 }

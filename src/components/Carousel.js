@@ -3,7 +3,9 @@ import Flickity from 'react-flickity-component'
 import 'flickity/dist/flickity.min.css';
 
 const flickityOptions = {
-    initialIndex: 2
+    initialIndex: 2,
+    pageDots: false,
+    draggable: false
 }
  
 function Carousel(props) {
