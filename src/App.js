@@ -83,7 +83,7 @@ class App extends Component {
       <div className="App" style={{ backgroundImage: 'url(' + bgImage + ')' }}>
             <div className="contentArea">
             <h1>The Forecast {this.state.forCity}</h1>
-            <h3>Type in a city name to see the 5 day temprature forecast</h3>
+            <h3>Type in a city name to see the 5 day temperature forecast</h3>
             <div className="search">
         
             <input placeholder="Enter city" autoFocus onChange={this.onChange} name="city" value={this.state.city}/>
